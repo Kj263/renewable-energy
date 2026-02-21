@@ -9,7 +9,7 @@ Available at: https://www.kaggle.com/datasets/whisperingkahuna/energy-consumptio
 
 import pandas as pd
 
-energycons = pd.read_csv("C:/Users/kjirs/CS 399 - Data Science/Project Documentation/Datasets/Kaggle Energy Consumption - Our World in Data/owid-energy-data.csv")
+energycons = pd.read_csv("/Kaggle Energy Consumption - Our World in Data/owid-energy-data.csv")
 
 '''
 Checking for record format, checking data types
@@ -94,3 +94,4 @@ Final Clean Dataset Save (Qualitative & Quantitative)
 # Reset the index after removing rows
 energycons = energycons.reset_index(drop=True)
 energycons.to_csv("EnergyConsumption_mixed_clean.csv", index=False)
+
