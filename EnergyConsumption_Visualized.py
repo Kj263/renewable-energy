@@ -13,7 +13,7 @@ import plotly.express as px
 import matplotlib.pyplot as plt
 
 
-energycons = pd.read_csv("C:/Users/kjirs/CS 399 - Data Science/Project Documentation/Datasets/Kaggle Energy Consumption - Our World in Data/owid-energy-data.csv")
+energycons = pd.read_csv("/Kaggle Energy Consumption - Our World in Data/owid-energy-data.csv")
 
 # Select numeric columns
 numeric_columns = energycons.select_dtypes(include=['float64', 'int64']).columns
@@ -67,6 +67,7 @@ fig.write_html('Interactive_Time_Series_Plot.html')
 # Display the plot in Spyder
 import webbrowser
 webbrowser.open('Interactive_Time_Series_Plot.html')
+
 
 
 
