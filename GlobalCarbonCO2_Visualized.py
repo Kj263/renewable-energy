@@ -16,7 +16,7 @@ import plotly.io as pio
 # Set the default renderer to 'browser', wasn't populating otherwise
 pio.renderers.default = 'browser'
 
-carbonpercap = pd.read_csv("C:/Users/kjirs/CS 399 - Data Science/Project Documentation/Cleaning Data/GCBpercapita/GCBpercapita_mixed_clean.csv")
+carbonpercap = pd.read_csv("/GCBpercapita/GCBpercapita_mixed_clean.csv")
 
 """
 Heatmap for Carbon Emissions Per Capita for each variable (Time Inclusive)
@@ -78,3 +78,4 @@ for year in years:
     plt.xticks(rotation=90)
     plt.savefig(f'Per_Capita_Emissions_BarChart_{year}_AfterCleaning.png')
     plt.close()
+
