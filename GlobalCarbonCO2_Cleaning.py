@@ -16,7 +16,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error
 
-carbonpercap = pd.read_csv("C:/Users/kjirs/CS 399 - Data Science/Project Documentation/Datasets/GCB2023v43_percapita_flat.csv")
+carbonpercap = pd.read_csv("/GCB2023v43_percapita_flat.csv")
 
 '''
 Checking for record format, checking data types
@@ -272,4 +272,5 @@ Final Clean Dataset Save (Qualitative & Quantitative)
 # Reset the index after removing rows
 carbonpercap = carbonpercap.reset_index(drop=True)
 carbonpercap.to_csv("GCBpercapita_mixed_clean.csv", index=False)
+
 
